@@ -38,7 +38,7 @@
 
 <h2 align="center">UI-KIT :art:</h2>
 <p align="center">
-  <img src="assets/ui.png">
+  <img src="assets/ui.jpg">
 <p>
 <h2 align="center">Desktop - 1728 x 7194 :desktop_computer:</h2>
 <p align="center">
