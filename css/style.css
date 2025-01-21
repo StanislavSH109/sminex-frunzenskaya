@@ -700,6 +700,63 @@ a {
   height: 740px;
 }
 
+.infrastructure {
+  padding: 120px 0;
+}
+.infrastructure__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infrastructure__list {
+  display: flex;
+  max-width: 800px;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.infrastructure__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+.infrastructure__item:not(:last-child) {
+  margin: 0 0 10px;
+}
+.infrastructure__item-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  text-align: left;
+  width: 370px;
+}
+.infrastructure__numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 250px 250px 0 0;
+  border: 1px solid #c49a6c;
+  border-bottom: unset;
+  padding: 100px;
+}
+.infrastructure__numbers-list {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.infrastructure__numbers-title {
+  display: block;
+  text-align: center;
+}
+.infrastructure__numbers-text {
+  margin: 0;
+}
+
 .socials {
   display: flex;
   padding: 0;
