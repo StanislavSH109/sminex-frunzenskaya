@@ -618,11 +618,35 @@ a {
   list-style: none;
 }
 .embankment__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 456px;
   height: 600px;
 }
 .embankment__item img {
   border-radius: 0 0 250px 250px;
+}
+.embankment__logo {
+  width: 99px;
+  height: 134px;
+}
+.embankment__logo-text {
+  color: #c49a6c;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+.embankment__title {
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 380px;
 }
 
 .socials {
