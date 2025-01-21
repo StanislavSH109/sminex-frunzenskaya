@@ -599,15 +599,19 @@ a {
   letter-spacing: -0.08em;
   color: #ffffff;
   margin: 0;
-  padding: 0;
   text-transform: uppercase;
   width: 800px;
   text-align: center;
   padding: 0 0 30px;
 }
 
-.embankment {
+.embankment__wrapper {
+  display: flex;
   padding: 120px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
 }
 .embankment__list {
   display: flex;
@@ -619,7 +623,6 @@ a {
 }
 .embankment__item {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 456px;
@@ -628,9 +631,16 @@ a {
 .embankment__item img {
   border-radius: 0 0 250px 250px;
 }
+.embankment__item-arch {
+  border-radius: 250px 250px 0 0;
+  border: 1px solid #c49a6c;
+  border-bottom: none;
+  padding: 93px 0 0;
+}
 .embankment__logo {
   width: 99px;
   height: 134px;
+  margin: 0 0 40px;
 }
 .embankment__logo-text {
   color: #c49a6c;
@@ -638,15 +648,56 @@ a {
   line-height: 26px;
   letter-spacing: 0.2em;
   font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 10px;
 }
 .embankment__title {
+  font-family: "Tenor Sans", "Arial", sans-serif;
   font-size: 44px;
   line-height: 50px;
   font-weight: 400;
-  letter-spacing: 0.08em;
+  letter-spacing: -0.08em;
   text-align: center;
   text-transform: uppercase;
   width: 380px;
+  margin: 0 0 40px;
+}
+.embankment__location-logo {
+  width: 16px;
+  height: 22px;
+  margin: 0 0 12px;
+}
+.embankment__address {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  font-style: normal;
+}
+.embankment__description {
+  margin: 0;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #c49a6c;
+  width: 900px;
+}
+.embankment__image {
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+.embankment-picture {
+  background-image: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 740px;
 }
 
 .socials {
