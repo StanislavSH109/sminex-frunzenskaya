@@ -748,13 +748,34 @@ a {
   justify-content: center;
   align-items: center;
   list-style: none;
+  gap: 60px;
 }
 .infrastructure__numbers-title {
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
   text-align: center;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: #c49a6c;
+  margin: 0 0 10px;
+}
+.infrastructure__numbers-title span {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #c49a6c;
+  text-transform: uppercase;
 }
 .infrastructure__numbers-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
   margin: 0;
+  width: 192px;
+  text-align: center;
 }
 
 .socials {

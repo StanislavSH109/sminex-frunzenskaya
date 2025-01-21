@@ -54,14 +54,36 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+    gap: 60px;
   }
 
   &__numbers-title {
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
     text-align: center;
+    font-family: $ff-tenor;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-fallow;
+    margin: 0 0 10px;
+
+    span {
+      font-family: $ff-tenor;
+      font-size: 18px;
+      line-height: 26px;
+      color: $color-fallow;
+      text-transform: uppercase;
+    }
   }
 
   &__numbers-text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
     margin: 0;
+    width: 192px;
+    text-align: center;
   }
 }
