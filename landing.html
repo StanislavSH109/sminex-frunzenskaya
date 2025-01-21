@@ -50,20 +50,22 @@
           <div class="embankment__pictures">
             <ul class="embankment__list">
               <li class="embankment__item">
-                <picture class=embankment__picture>
-                  <source media="(max-width: 767px)"  srcset="images/">
-                  <source media="(max-width: 767px)"  srcset="images/">
-                  <img src=  alt="фото набережной"  width="456"  height="600">
+                <picture class="embankment__picture">
+                  <source media="(max-width: 767px)"  srcset="images/picture1-mobile.png 1x, images/picture1-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)"  srcset="images/picture1-tablet.png 1x, images/picture1-tablet@2x.png 2x">
+                  <img src="images/picture1.png" srcset="images/picture1@2x.png 2x"  alt="фото набережной"  width="456"  height="600">
                 </picture>
               </li>
               <li class="embankment__item">
-
+                <svg>
+                  <use xlink:href="images/sprite.svg#logo-park"></use>
+                </svg>
               </li>
               <li class="embankment__item">
-                <picture class=embankment__picture>
-                  <source media="(max-width: 767px)"  srcset="images/">
-                  <source media="(max-width: 767px)"  srcset="images/">
-                  <img src=  alt="фото набережной"  width="456"  height="600">
+                <picture class="embankment__picture">
+                  <source media="(max-width: 767px)"  srcset="images/picture2-mobile.png 1x, images/picture2-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)"  srcset="images/picture2-tablet.png 1x, images/picture2-tablet@2x.png 2x">
+                  <img src="images/picture2.png" srcset="images/picture2@2x.png 2x" alt="фото набережной"  width="456"  height="600">
                 </picture>
               </li>
             </ul>

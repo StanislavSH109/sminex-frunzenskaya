@@ -586,6 +586,11 @@ a {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 69.07%, #000000 100%), url("/images/hero.png");
   background-size: cover;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero@2x.png");
+  }
+}
 .hero__title {
   font-size: 60px;
   font-family: "Tenor Sans", "Arial", sans-serif;
@@ -599,6 +604,25 @@ a {
   width: 800px;
   text-align: center;
   padding: 0 0 30px;
+}
+
+.embankment {
+  padding: 120px 0;
+}
+.embankment__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.embankment__item {
+  width: 456px;
+  height: 600px;
+}
+.embankment__item img {
+  border-radius: 0 0 250px 250px;
 }
 
 .socials {

@@ -1,0 +1,21 @@
+.embankment {
+  padding: 120px 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    width: 456px;
+    height: 600px;
+
+    img {
+      border-radius: 0 0 250px 250px;
+    }
+  }
+}
