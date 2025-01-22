@@ -912,6 +912,81 @@ a {
   margin: 0;
 }
 
+.apartments {
+  padding: 0 0 120px;
+}
+.apartments__wrapper {
+  display: grid;
+  grid-template-columns: 485px 800px;
+  gap: 85px;
+  align-items: center;
+}
+.apartments__description {
+  display: flex;
+  flex-direction: column;
+}
+.apartments__description-title {
+  margin: 0 0 30px;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  font-weight: 400;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+  text-transform: uppercase;
+}
+.apartments__description-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 40px;
+}
+.apartments__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.apartments__item {
+  text-align: center;
+  height: 700px;
+  width: 400px;
+}
+.apartments__item img {
+  height: 700px;
+  width: 400px;
+  border-radius: 0 0 250px 250px;
+}
+.apartments__item span {
+  display: block;
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  margin: 0 0 40px;
+}
+.apartments__item-text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.08em;
+  font-weight: 400;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+  margin: 0;
+}
+.apartments__item--decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 250px 250px 0 0;
+  border: 1px solid #c49a6c;
+  border-bottom: unset;
+  padding: 100px;
+}
+
 .reception {
   height: 500px;
   background: url("/images/reception.png") no-repeat;
@@ -949,6 +1024,23 @@ a {
 }
 .socials__link:hover, .socials__link:focus-visible {
   color: #D6D2C4;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  color: #c49a6c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 0px 40px 0px 40px;
+  border: 1px solid #c49a6c;
+  cursor: pointer;
+  padding: 14px;
+  background-color: #390417;
 }
 
 .footer {
