@@ -38,6 +38,8 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   &__item {
@@ -69,6 +71,7 @@
       font-family: $ff-tenor;
       color: $color-fallow;
       margin: 0;
+      text-transform: uppercase;
     }
 
     &--decoration {

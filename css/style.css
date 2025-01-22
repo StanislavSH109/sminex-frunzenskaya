@@ -815,7 +815,7 @@ a {
 }
 
 .info {
-  padding: 0 0 120px;
+  padding: 0 0 106px;
 }
 .info__wrapper {
   display: grid;
@@ -876,6 +876,10 @@ a {
 }
 .architecture__description {
   padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
 }
 .architecture__list {
   display: flex;
@@ -947,6 +951,8 @@ a {
   justify-content: center;
   align-items: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .apartments__item {
   text-align: center;
@@ -975,6 +981,7 @@ a {
   font-family: "Tenor Sans", "Arial", sans-serif;
   color: #c49a6c;
   margin: 0;
+  text-transform: uppercase;
 }
 .apartments__item--decoration {
   display: flex;
