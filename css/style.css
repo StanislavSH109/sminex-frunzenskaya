@@ -582,9 +582,9 @@ a {
   min-height: 740px;
   background-position: center;
   overflow: hidden;
-  background-repeat: no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 69.07%, #000000 100%), url("/images/hero.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
@@ -709,20 +709,20 @@ a {
   align-items: center;
 }
 .infrastructure__list {
-  display: flex;
-  max-width: 800px;
+  -moz-columns: 2;
+       columns: 2;
   gap: 40px;
-  padding: 0;
+  padding: 10px 0 0 20px;
   margin: 0;
+}
+.infrastructure__item:not(:last-child) {
+  margin: 0 0 15px;
 }
 .infrastructure__text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   margin: 0 0 30px;
-}
-.infrastructure__item:not(:last-child) {
-  margin: 0 0 10px;
 }
 .infrastructure__item-text {
   font-size: 18px;
@@ -739,7 +739,8 @@ a {
   border-radius: 250px 250px 0 0;
   border: 1px solid #c49a6c;
   border-bottom: unset;
-  padding: 100px;
+  padding: 100px 100px 60px 100px;
+  max-height: 700px;
 }
 .infrastructure__numbers-list {
   display: flex;
@@ -776,6 +777,150 @@ a {
   margin: 0;
   width: 192px;
   text-align: center;
+}
+
+.park {
+  padding: 0 0 120px;
+}
+.park__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.park__description {
+  max-width: 480px;
+}
+.park__title {
+  text-align: left;
+  color: #c49a6c;
+  font-size: 34px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  margin: 0 0 30px -10px;
+}
+.park__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 495px;
+}
+
+.info {
+  padding: 0 0 120px;
+}
+.info__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.info__wrapper svg {
+  margin-top: -25px;
+  width: 500px;
+}
+.info__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.info__block-numbers {
+  font-size: 140px;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+}
+.info__block-numbers span {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+}
+.info__block-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.architecture {
+  padding: 0 0 120px;
+}
+.architecture__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.architecture__title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  color: #c49a6c;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 400px;
+  text-align: left;
+}
+.architecture__description {
+  padding: 0;
+}
+.architecture__list {
+  display: flex;
+  justify-content: center;
+  gap: 84px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.architecture__item-picture img {
+  margin: 0 0 20px;
+  height: 700px;
+  width: 400px;
+  border-radius: 0 0 250px 250px;
+}
+.architecture__item--reverse img {
+  border-radius: 250px 250px 0 0;
+}
+.architecture__item-text {
+  text-align: center;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  line-height: 26px;
+  letter-spacing: -0.08em;
+  color: #c49a6c;
+  text-transform: uppercase;
+}
+.architecture__description {
+  text-align: left;
+  width: 398px;
+  margin: 0;
+}
+
+.reception {
+  height: 500px;
+  background: url("/images/reception.png") no-repeat;
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .reception {
+    background-image: url("/images/reception@2x.png");
+  }
 }
 
 .socials {

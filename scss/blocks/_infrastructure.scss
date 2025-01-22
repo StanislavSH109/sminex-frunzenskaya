@@ -8,11 +8,16 @@
   }
 
   &__list {
-    display: flex;
-    max-width: 800px;
+    columns: 2;
     gap: 40px;
-    padding: 0;
-    margin: 0
+    padding: 10px 0 0 20px;
+    margin: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
   }
 
   &__text {
@@ -22,11 +27,6 @@
     margin: 0 0 30px;
   }
 
-  &__item {
-    &:not(:last-child) {
-      margin: 0 0 10px;
-    }
-  }
 
   &__item-text {
     font-size: 18px;
@@ -44,7 +44,8 @@
     border-radius: 250px 250px 0 0;
     border: 1px solid $color-fallow;
     border-bottom: unset;
-    padding: 100px;
+    padding: 100px 100px 60px 100px;
+    max-height: 700px;
   }
 
   &__numbers-list {

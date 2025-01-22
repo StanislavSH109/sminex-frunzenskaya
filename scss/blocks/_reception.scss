@@ -1,0 +1,10 @@
+.reception {
+  height: 500px;
+  background: url("/images/reception.png") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/images/reception@2x.png");
+  }
+}
+
