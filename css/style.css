@@ -375,6 +375,10 @@ a {
   text-decoration: none;
 }
 
+li::marker {
+  color: #c49a6c;
+}
+
 .container {
   max-width: 1728px;
   margin: 0 auto;
