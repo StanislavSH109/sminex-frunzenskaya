@@ -51,36 +51,44 @@
           <div class="embankment__pictures">
             <ul class="embankment__list">
               <li class="embankment__item">
-                <picture class="embankment__picture">
-                  <source media="(max-width: 767px)"  srcset="images/picture1-mobile.png 1x, images/picture1-mobile@2x.png 2x">
-                  <source media="(max-width: 1023px)"  srcset="images/picture1-tablet.png 1x, images/picture1-tablet@2x.png 2x">
-                  <img src="images/picture1.png" srcset="images/picture1@2x.png 2x"  alt="фото набережной"  width="456"  height="600">
-                </picture>
-              </li>
-              <li class="embankment__item embankment__item-arch">
-                <svg class="embankment__logo">
-                  <use xlink:href="images/sprite.svg#logo-park"></use>
-                </svg>
-                <span class="embankment__logo-text">Клубный город парк</span>
-                <h2 class="embankment__title">Фрунзенская набережная</h2>
-                <span class="embankment__location">
-                  <svg class="embankment__location-logo">
-                    <use xlink:href="images/sprite.svg#icon-geo"></use>
-                  </svg>
-                </span>
-                <address class="embankment__address">Фрунзенская набережная, 30</address>
+                <div class="card-arch card-arch--image">
+                  <picture class="card-arch__picture">
+                    <source media="(max-width: 767px)"  srcset="images/picture1-mobile.png 1x, images/picture1-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"  srcset="images/picture1-tablet.png 1x, images/picture1-tablet@2x.png 2x">
+                    <img src="images/picture1.png" srcset="images/picture1@2x.png 2x"  alt="фото набережной"  width="456"  height="600">
+                  </picture>
+                </div> 
               </li>
               <li class="embankment__item">
-                <picture class="embankment__picture">
-                  <source media="(max-width: 767px)"  srcset="images/picture2-mobile.png 1x, images/picture2-mobile@2x.png 2x">
-                  <source media="(max-width: 1023px)"  srcset="images/picture2-tablet.png 1x, images/picture2-tablet@2x.png 2x">
-                  <img src="images/picture2.png" srcset="images/picture2@2x.png 2x" alt="фото набережной"  width="456"  height="600">
-                </picture>
+                <div class="card-arch">
+                  <svg class="card-arch__logo">
+                    <use xlink:href="images/sprite.svg#logo-park"></use>
+                  </svg>
+                  <span class="card-arch__logo-text">Клубный город парк</span>
+                  <h2 class="card-arch__title">Фрунзенская набережная</h2>
+                  <span class="card-arch__location">
+                    <svg class="card-arch__location-logo">
+                      <use xlink:href="images/sprite.svg#icon-geo"></use>
+                    </svg>
+                  </span>
+                  <address class="card-arch__address">Фрунзенская набережная, 30</address>
+                </div>
+              </li>
+              <li class="embankment__item">
+                <div class="card-arch card-arch--image">
+                  <picture class="card-arch__picture">
+                    <source media="(max-width: 767px)"  srcset="images/picture2-mobile.png 1x, images/picture2-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"  srcset="images/picture2-tablet.png 1x, images/picture2-tablet@2x.png 2x">
+                    <img src="images/picture2.png" srcset="images/picture2@2x.png 2x" alt="фото набережной"  width="456"  height="600">
+                  </picture>
+                </div>
               </li>
             </ul>
           </div>
           <p class="embankment__description">
-            &laquo;Фрунзенская набережная&raquo;&nbsp;&mdash; долгожданный и&nbsp;неповторимый элитный клубный город-парк в&nbsp;престижном и&nbsp;желанном месте
+            <span class="embankment__description-first-row">&laquo;Фрунзенская набережная&raquo;&nbsp;&mdash;</span> 
+            <span class="embankment__description-second-row">долгожданный и&nbsp;неповторимый элитный</span> 
+            <span class="embankment__description-third-row">клубный город-парк в&nbsp;престижном и&nbsp;желанном месте</span>
           </p>
         </div>
       </div>

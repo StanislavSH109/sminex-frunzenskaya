@@ -584,11 +584,12 @@ li::marker {
   justify-content: flex-end;
   width: 100%;
   min-height: 740px;
-  background-position: center;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 69.07%, #000000 100%), url("/images/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 0 30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
@@ -606,7 +607,6 @@ li::marker {
   text-transform: uppercase;
   width: 800px;
   text-align: center;
-  padding: 0 0 30px;
 }
 
 .embankment__wrapper {
@@ -625,59 +625,6 @@ li::marker {
   padding: 0;
   list-style: none;
 }
-.embankment__item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 456px;
-  height: 600px;
-}
-.embankment__item img {
-  border-radius: 0 0 250px 250px;
-}
-.embankment__item-arch {
-  border-radius: 250px 250px 0 0;
-  border: 1px solid #c49a6c;
-  border-bottom: none;
-  padding: 93px 0 0;
-}
-.embankment__logo {
-  width: 99px;
-  height: 134px;
-  margin: 0 0 40px;
-}
-.embankment__logo-text {
-  color: #c49a6c;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.2em;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 10px;
-}
-.embankment__title {
-  font-family: "Tenor Sans", "Arial", sans-serif;
-  font-size: 44px;
-  line-height: 50px;
-  font-weight: 400;
-  letter-spacing: -0.08em;
-  text-align: center;
-  text-transform: uppercase;
-  width: 380px;
-  margin: 0 0 40px;
-}
-.embankment__location-logo {
-  width: 16px;
-  height: 22px;
-  margin: 0 0 12px;
-}
-.embankment__address {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #ffffff;
-  font-style: normal;
-}
 .embankment__description {
   margin: 0;
   font-family: "Tenor Sans", "Arial", sans-serif;
@@ -687,7 +634,18 @@ li::marker {
   letter-spacing: -0.08em;
   text-transform: uppercase;
   color: #c49a6c;
-  width: 900px;
+  width: 100%;
+  text-align: center;
+}
+.embankment__description-first-row {
+  display: block;
+}
+.embankment__description-second-row {
+  display: block;
+}
+.embankment__description-third-row {
+  display: block;
+  width: 100%;
 }
 .embankment__image {
   width: 100vw;
@@ -702,6 +660,62 @@ li::marker {
   background-repeat: no-repeat;
   background-size: cover;
   height: 740px;
+}
+
+.card-arch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 250px 250px 0 0;
+  border: 1px solid #c49a6c;
+  border-bottom: none;
+  height: 600px;
+  width: 456px;
+}
+.card-arch--image {
+  border: unset;
+  padding: 0;
+}
+.card-arch--image img {
+  border-radius: 0 0 250px 250px;
+}
+.card-arch__logo {
+  width: 99px;
+  height: 134px;
+  margin: 0 0 40px;
+}
+.card-arch__logo-text {
+  color: #c49a6c;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.card-arch__title {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 380px;
+  margin: 0 0 40px;
+}
+.card-arch__location-logo {
+  width: 16px;
+  height: 22px;
+  margin: 0 0 12px;
+}
+.card-arch__address {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  font-style: normal;
 }
 
 .infrastructure {
@@ -999,9 +1013,13 @@ li::marker {
 }
 
 .reception {
+  width: 100%;
   height: 500px;
-  background: url("/images/reception.png") no-repeat;
+  overflow: hidden;
+  background: url("/images/reception.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .reception {

@@ -1,0 +1,63 @@
+.card-arch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 250px 250px 0 0;
+  border: 1px solid $color-fallow;
+  border-bottom: none;
+  height: 600px;
+  width: 456px;
+
+  &--image {
+    border: unset;
+    padding: 0;
+
+    img {
+      border-radius: 0 0 250px 250px;
+    }
+  }
+
+  &__logo {
+    width: 99px;
+    height: 134px;
+    margin: 0 0 40px;
+  }
+
+  &__logo-text {
+    color: $color-fallow;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: .2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  &__title {
+    font-family: $ff-tenor;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: -0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 380px;
+    margin: 0 0 40px;
+  }
+
+  &__location-logo {
+    width: 16px;
+    height: 22px;
+    margin: 0 0 12px;
+  }
+
+
+  &__address {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $color-white;
+    font-style: normal;
+  }
+}
