@@ -670,15 +670,34 @@ li::marker {
   border-radius: 250px 250px 0 0;
   border: 1px solid #c49a6c;
   border-bottom: none;
-  height: 600px;
-  width: 456px;
+  min-height: 700px;
+  width: 400px;
+}
+.card-arch img {
+  border-radius: 0 0 250px 250px;
 }
 .card-arch--image {
   border: unset;
   padding: 0;
 }
-.card-arch--image img {
-  border-radius: 0 0 250px 250px;
+.card-arch--main {
+  width: 456px;
+  min-height: 600px;
+}
+.card-arch--reverse img {
+  border-radius: 250px 250px 0 0;
+}
+.card-arch--statistic {
+  width: 400px;
+  height: 700px;
+  padding: 40px 0 0;
+}
+.card-arch__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 60px;
 }
 .card-arch__logo {
   width: 99px;
@@ -717,6 +736,55 @@ li::marker {
   color: #ffffff;
   font-style: normal;
 }
+.card-arch__numbers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: #c49a6c;
+  margin: 0 0 10px;
+}
+.card-arch__numbers span {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #c49a6c;
+  text-transform: uppercase;
+}
+.card-arch__numbers-big {
+  display: block;
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  margin: 0 0 40px;
+  color: #c49a6c;
+}
+.card-arch__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  width: 192px;
+  text-align: center;
+}
+.card-arch__text-decor {
+  text-align: center;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  line-height: 26px;
+  letter-spacing: -0.08em;
+  color: #c49a6c;
+  text-transform: uppercase;
+  padding: 20px 0 0;
+}
 
 .infrastructure {
   padding: 120px 0;
@@ -749,52 +817,6 @@ li::marker {
   margin: 0;
   text-align: left;
   width: 370px;
-}
-.infrastructure__numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 250px 250px 0 0;
-  border: 1px solid #c49a6c;
-  border-bottom: unset;
-  padding: 100px 100px 60px 100px;
-  max-height: 700px;
-}
-.infrastructure__numbers-list {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 60px;
-}
-.infrastructure__numbers-title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 12px;
-  text-align: center;
-  font-family: "Tenor Sans", "Arial", sans-serif;
-  font-size: 48px;
-  line-height: 48px;
-  color: #c49a6c;
-  margin: 0 0 10px;
-}
-.infrastructure__numbers-title span {
-  font-family: "Tenor Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  color: #c49a6c;
-  text-transform: uppercase;
-}
-.infrastructure__numbers-text {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  margin: 0;
-  width: 192px;
-  text-align: center;
 }
 
 .park {
@@ -833,21 +855,35 @@ li::marker {
 }
 
 .info {
-  padding: 0 0 106px;
+  padding: 0 0 120px;
 }
 .info__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.info__wrapper svg {
-  margin-top: -25px;
-  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .info__block {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.info__block::before {
+  content: url("/images/sprite/icon-arrow-left.svg");
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 490px;
+  height: 10px;
+}
+.info__block::after {
+  content: url("/images/sprite/icon-arrow-right.svg");
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  width: 490px;
+  height: 10px;
 }
 .info__block-numbers {
   font-size: 140px;
@@ -856,6 +892,7 @@ li::marker {
   font-weight: 400;
   font-family: "Tenor Sans", "Arial", sans-serif;
   color: #c49a6c;
+  margin: 0 0 20px;
 }
 .info__block-numbers span {
   font-size: 34px;
@@ -865,6 +902,7 @@ li::marker {
   color: #c49a6c;
 }
 .info__block-text {
+  display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -906,27 +944,6 @@ li::marker {
   padding: 0;
   list-style: none;
   margin: 0;
-}
-.architecture__item-picture img {
-  margin: 0 0 20px;
-  height: 700px;
-  width: 400px;
-  border-radius: 0 0 250px 250px;
-}
-.architecture__item--reverse img {
-  border-radius: 250px 250px 0 0;
-}
-.architecture__item-text {
-  text-align: center;
-  width: 400px;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-family: "Tenor Sans", "Arial", sans-serif;
-  line-height: 26px;
-  letter-spacing: -0.08em;
-  color: #c49a6c;
-  text-transform: uppercase;
 }
 .architecture__description {
   text-align: left;
@@ -971,24 +988,6 @@ li::marker {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.apartments__item {
-  text-align: center;
-  height: 700px;
-  width: 400px;
-}
-.apartments__item img {
-  height: 700px;
-  width: 400px;
-  border-radius: 0 0 250px 250px;
-}
-.apartments__item span {
-  display: block;
-  font-size: 140px;
-  font-weight: 400;
-  line-height: 100px;
-  letter-spacing: -0.04em;
-  margin: 0 0 40px;
 }
 .apartments__item-text {
   text-align: center;

@@ -1,21 +1,37 @@
 .info {
-  padding: 0 0 106px;
+  padding: 0 0 120px;
+  
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    svg {
-      margin-top: -25px;
-      width: 500px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-
+  
   &__block {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
+    &::before {
+      content: url("/images/sprite/icon-arrow-left.svg");
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 490px;
+      height: 10px;
+    }
+
+    &::after {
+      content: url("/images/sprite/icon-arrow-right.svg");
+      position: absolute;
+      top: 25%;
+      right: 10px;
+      width: 490px;
+      height: 10px;
+    }
+    
     &-numbers {
       font-size: 140px;
       line-height: 100px;
@@ -23,6 +39,9 @@
       font-weight: 400;
       font-family: $ff-tenor;
       color: $color-fallow;
+      margin: 0 0 20px;
+
+     
 
       span {
         font-size: 34px;
@@ -34,6 +53,7 @@
     }
 
     &-text {
+      display: block;
       font-size: 18px;
       line-height: 26px;
       font-weight: 400;
