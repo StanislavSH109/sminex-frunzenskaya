@@ -42,33 +42,4 @@
     margin: 0;
   }
 
-  &__item {
-
-    
-
-    &-text {
-      text-align: center;
-      font-size: 20px;
-      line-height: 26px;
-      letter-spacing: -0.08em;
-      font-weight: 400;
-      font-family: $ff-tenor;
-      color: $color-fallow;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    &--decoration {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-radius: 250px 250px 0 0;
-      border: 1px solid $color-fallow;
-      border-bottom: unset;
-      padding: 100px;
-    }
-  }
-
-
 }

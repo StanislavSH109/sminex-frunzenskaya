@@ -759,6 +759,7 @@ li::marker {
   display: block;
   font-size: 140px;
   font-weight: 400;
+  font-family: "Tenor Sans", "Arial", sans-serif;
   line-height: 100px;
   letter-spacing: -0.04em;
   margin: 0 0 40px;
@@ -988,27 +989,6 @@ li::marker {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.apartments__item-text {
-  text-align: center;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: -0.08em;
-  font-weight: 400;
-  font-family: "Tenor Sans", "Arial", sans-serif;
-  color: #c49a6c;
-  margin: 0;
-  text-transform: uppercase;
-}
-.apartments__item--decoration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 250px 250px 0 0;
-  border: 1px solid #c49a6c;
-  border-bottom: unset;
-  padding: 100px;
 }
 
 .reception {
