@@ -384,6 +384,11 @@ li::marker {
   margin: 0 auto;
   padding: 0 180px;
 }
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -596,6 +601,11 @@ li::marker {
     background-image: url("/images/hero@2x.png");
   }
 }
+@media (max-width: 1023px) {
+  .hero {
+    min-height: 460px;
+  }
+}
 .hero__title {
   font-size: 60px;
   font-family: "Tenor Sans", "Arial", sans-serif;
@@ -608,6 +618,13 @@ li::marker {
   width: 800px;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .hero__title {
+    font-size: 40px;
+    line-height: 46px;
+    max-width: 520px;
+  }
+}
 
 .embankment__wrapper {
   display: flex;
@@ -617,6 +634,12 @@ li::marker {
   align-items: center;
   gap: 120px;
 }
+@media (max-width: 1023px) {
+  .embankment__wrapper {
+    padding: 80px 0;
+    gap: 80px;
+  }
+}
 .embankment__list {
   display: flex;
   justify-content: center;
@@ -624,6 +647,11 @@ li::marker {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 1023px) {
+  .embankment__list .embankment__item:last-child {
+    display: none;
+  }
 }
 .embankment__description {
   margin: 0;
@@ -636,6 +664,12 @@ li::marker {
   color: #c49a6c;
   width: 100%;
   text-align: center;
+}
+@media (max-width: 1023px) {
+  .embankment__description {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .embankment__description-first-row {
   display: block;
@@ -661,6 +695,12 @@ li::marker {
   background-size: cover;
   height: 740px;
 }
+@media (max-width: 1023px) {
+  .embankment-picture {
+    height: 460px;
+    background-position: center;
+  }
+}
 
 .card-arch {
   display: flex;
@@ -673,6 +713,12 @@ li::marker {
   min-height: 700px;
   width: 400px;
 }
+@media (max-width: 1023px) {
+  .card-arch {
+    justify-content: unset;
+    padding: 40px 0 0;
+  }
+}
 .card-arch img {
   border-radius: 0 0 250px 250px;
 }
@@ -683,6 +729,12 @@ li::marker {
 .card-arch--main {
   width: 456px;
   min-height: 600px;
+}
+@media (max-width: 1023px) {
+  .card-arch--main {
+    width: 266px;
+    min-height: 350px;
+  }
 }
 .card-arch--reverse img {
   border-radius: 250px 250px 0 0;
@@ -704,6 +756,12 @@ li::marker {
   height: 134px;
   margin: 0 0 40px;
 }
+@media (max-width: 1023px) {
+  .card-arch__logo {
+    height: 95px;
+    margin: 0 0 20px;
+  }
+}
 .card-arch__logo-text {
   color: #c49a6c;
   font-size: 18px;
@@ -712,6 +770,14 @@ li::marker {
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 0 10px;
+}
+@media (max-width: 1023px) {
+  .card-arch__logo-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    margin: 0 0 2px;
+  }
 }
 .card-arch__title {
   font-family: "Tenor Sans", "Arial", sans-serif;
@@ -724,10 +790,23 @@ li::marker {
   width: 380px;
   margin: 0 0 40px;
 }
+@media (max-width: 1023px) {
+  .card-arch__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px;
+  }
+}
 .card-arch__location-logo {
   width: 16px;
   height: 22px;
   margin: 0 0 12px;
+}
+@media (max-width: 1023px) {
+  .card-arch__location-logo {
+    width: 13px;
+    height: 18px;
+  }
 }
 .card-arch__address {
   font-size: 18px;
@@ -735,6 +814,12 @@ li::marker {
   font-weight: 400;
   color: #ffffff;
   font-style: normal;
+}
+@media (max-width: 1023px) {
+  .card-arch__address {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .card-arch__numbers {
   display: flex;
@@ -790,10 +875,20 @@ li::marker {
 .infrastructure {
   padding: 120px 0;
 }
+@media (max-width: 1023px) {
+  .infrastructure {
+    padding: 80px 0;
+  }
+}
 .infrastructure__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1023px) {
+  .infrastructure__wrapper {
+    flex-direction: column;
+  }
 }
 .infrastructure__list {
   -moz-columns: 2;
@@ -811,6 +906,12 @@ li::marker {
   font-weight: 400;
   margin: 0 0 30px;
 }
+@media (max-width: 1023px) {
+  .infrastructure__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .infrastructure__item-text {
   font-size: 18px;
   font-weight: 400;
@@ -818,6 +919,13 @@ li::marker {
   margin: 0;
   text-align: left;
   width: 370px;
+}
+@media (max-width: 1023px) {
+  .infrastructure__item-text {
+    font-size: 14px;
+    line-height: 20px;
+    width: unset;
+  }
 }
 
 .park {

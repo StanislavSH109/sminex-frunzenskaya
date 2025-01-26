@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     gap: 120px;
+    @include vp-1023 {
+      padding: 80px 0;
+      gap: 80px;
+    }
   }
 
   &__list {
@@ -16,6 +20,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include vp-1023 {
+      .embankment__item:last-child {
+        display: none;
+      }
+    }
   }
 
 
@@ -30,6 +40,11 @@
     color: $color-fallow;
     width: 100%;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 24px;
+      line-height: 30px;
+    }
 
     &-first-row {
       display: block;

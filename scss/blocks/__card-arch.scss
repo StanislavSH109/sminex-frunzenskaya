@@ -9,6 +9,11 @@
   min-height: 700px;
   width: 400px;
 
+  @include vp-1023 {
+    justify-content: unset;
+    padding: 40px 0 0;
+  }
+
   img {
     border-radius: 0 0 250px 250px;
   }
@@ -21,6 +26,11 @@
   &--main {
     width: 456px;
     min-height: 600px;
+
+    @include vp-1023 {
+      width: 266px;
+      min-height: 350px;
+    }
   }
 
   &--reverse {
@@ -47,6 +57,11 @@
     width: 99px;
     height: 134px;
     margin: 0 0 40px;
+
+    @include vp-1023 {
+      height: 95px;
+      margin: 0 0 20px;
+    }
   }
 
   &__logo-text {
@@ -57,6 +72,13 @@
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 0 10px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      margin: 0 0 2px;
+    }
   }
 
   &__title {
@@ -69,12 +91,23 @@
     text-transform: uppercase;
     width: 380px;
     margin: 0 0 40px;
+
+    @include vp-1023 {
+      font-size: 28px;
+      line-height: 32px;
+      margin: 0 0 20px;
+    }
   }
 
   &__location-logo {
     width: 16px;
     height: 22px;
     margin: 0 0 12px;
+
+    @include vp-1023 {
+      width: 13px;
+      height: 18px;
+    }
   }
 
 
@@ -84,6 +117,11 @@
     font-weight: 400;
     color: $color-white;
     font-style: normal;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__numbers {

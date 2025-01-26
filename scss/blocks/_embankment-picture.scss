@@ -3,4 +3,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 740px;
+
+  @include vp-1023 {
+    height: 460px;
+    background-position: center;
+  }
 }

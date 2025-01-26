@@ -17,6 +17,10 @@
   @media (min-resolution: 2dppx) {
     background-image: url("/images/hero@2x.png");
   }
+
+  @include vp-1023 {
+    min-height: 460px;
+  }
   
   &__title {
     font-size: 60px;
@@ -29,5 +33,11 @@
     text-transform: uppercase;
     width: 800px;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 46px;
+      max-width: 520px;
+    }
   }
 }
