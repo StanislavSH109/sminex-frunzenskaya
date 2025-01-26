@@ -778,13 +778,13 @@ li::marker {
   .card-arch__item {
     justify-content: unset;
   }
-  .card-arch__item__item:nth-child(2) {
+  .card-arch__item:nth-child(2) {
     padding: 20px 0 0;
   }
-  .card-arch__item__item:nth-child(3) .card-arch__text {
+  .card-arch__item:nth-child(3) .card-arch__text {
     margin: 0 0 20px;
   }
-  .card-arch__item__item:last-child {
+  .card-arch__item:last-child {
     padding: 80px 0 0;
   }
 }
@@ -937,6 +937,13 @@ li::marker {
   text-transform: uppercase;
   padding: 20px 0 0;
 }
+@media (max-width: 1023px) {
+  .card-arch__text-decor {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+}
 
 .infrastructure {
   padding: 120px 0;
@@ -1008,7 +1015,7 @@ li::marker {
 }
 
 .park {
-  padding: 55px 0 120px;
+  padding: 0 0 120px;
 }
 @media (max-width: 1023px) {
   .park {
@@ -1079,6 +1086,11 @@ li::marker {
 .info {
   padding: 0 0 120px;
 }
+@media (max-width: 1023px) {
+  .info {
+    padding: 0 0 80px;
+  }
+}
 .info__wrapper {
   display: flex;
   justify-content: center;
@@ -1094,7 +1106,6 @@ li::marker {
 .info__block::before {
   content: "";
   background: url("/images/sprite/icon-arrow-left.svg") center no-repeat;
-  background-size: contain;
   position: absolute;
   top: 25%;
   left: 0;
@@ -1104,12 +1115,12 @@ li::marker {
 @media (max-width: 1023px) {
   .info__block::before {
     width: 264px;
+    background-size: contain;
   }
 }
 .info__block::after {
   content: "";
   background: url("/images/sprite/icon-arrow-right.svg") center no-repeat;
-  background-size: contain;
   position: absolute;
   top: 25%;
   right: 10px;
@@ -1119,6 +1130,7 @@ li::marker {
 @media (max-width: 1023px) {
   .info__block::after {
     width: 264px;
+    background-size: contain;
   }
 }
 .info__block-numbers {
@@ -1167,6 +1179,11 @@ li::marker {
   align-items: center;
   margin: 0 0 40px;
 }
+@media (max-width: 1023px) {
+  .architecture__wrapper {
+    margin: 0 0 15px;
+  }
+}
 .architecture__title {
   margin: 0;
   font-size: 34px;
@@ -1192,24 +1209,29 @@ li::marker {
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
-  text-align: center;
   width: 398px;
   margin: 0;
+  text-align: left;
 }
 @media (max-width: 1023px) {
   .architecture__description {
     font-size: 14px;
     line-height: 20px;
     width: 230px;
-    text-align: left;
   }
 }
 .architecture__list {
   display: flex;
   justify-content: center;
+  gap: 84px;
   padding: 0;
   list-style: none;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .architecture__list {
+    gap: 19px;
+  }
 }
 
 .apartments {

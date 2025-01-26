@@ -1,5 +1,9 @@
 .info {
   padding: 0 0 120px;
+
+  @include vp-1023 {
+    padding: 0 0 80px;
+  }
   
   &__wrapper {
     display: flex;
@@ -17,7 +21,6 @@
     &::before {
       content: "";
       background: url("/images/sprite/icon-arrow-left.svg") center no-repeat;
-      background-size: contain;
       position: absolute;
       top: 25%;
       left: 0;
@@ -26,12 +29,13 @@
 
       @include vp-1023 {
         width: 264px;
+        background-size: contain;
     }
   }
     &::after {
       content: "";
       background: url("/images/sprite/icon-arrow-right.svg") center no-repeat;
-      background-size: contain;
+      
       position: absolute;
       top: 25%;
       right: 10px;
@@ -40,6 +44,7 @@
 
       @include vp-1023 {
         width: 264px;
+        background-size: contain;
       }
       
     }
