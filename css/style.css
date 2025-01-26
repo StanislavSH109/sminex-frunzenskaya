@@ -1009,6 +1009,11 @@ li::marker {
 .park {
   padding: 55px 0 120px;
 }
+@media (max-width: 1023px) {
+  .park {
+    padding: 60px 0 82px;
+  }
+}
 .park__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1086,7 +1091,9 @@ li::marker {
   align-items: center;
 }
 .info__block::before {
-  content: url("/images/sprite/icon-arrow-left.svg");
+  content: "";
+  background: url("/images/sprite/icon-arrow-left.svg") center no-repeat;
+  background-size: contain;
   position: absolute;
   top: 25%;
   left: 0;
@@ -1095,11 +1102,13 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .info__block::before {
-    width: 255px;
+    width: 264px;
   }
 }
 .info__block::after {
-  content: url("/images/sprite/icon-arrow-right.svg");
+  content: "";
+  background: url("/images/sprite/icon-arrow-right.svg") center no-repeat;
+  background-size: contain;
   position: absolute;
   top: 25%;
   right: 10px;
@@ -1108,7 +1117,7 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .info__block::after {
-    max-width: 255px;
+    width: 264px;
   }
 }
 .info__block-numbers {
@@ -1124,6 +1133,7 @@ li::marker {
   .info__block-numbers {
     font-size: 90px;
     line-height: 70px;
+    margin: 0 0 15px;
   }
 }
 .info__block-numbers span {
@@ -1168,12 +1178,26 @@ li::marker {
   width: 400px;
   text-align: left;
 }
+@media (max-width: 1023px) {
+  .architecture__title {
+    font-size: 24px;
+    line-height: 30px;
+    width: 230px;
+  }
+}
 .architecture__description {
   padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .architecture__description {
+    font-size: 14px;
+    line-height: 20px;
+    width: 230px;
+  }
 }
 .architecture__list {
   display: flex;

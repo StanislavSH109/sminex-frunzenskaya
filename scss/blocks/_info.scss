@@ -15,7 +15,9 @@
     align-items: center;
 
     &::before {
-      content: url("/images/sprite/icon-arrow-left.svg");
+      content: "";
+      background: url("/images/sprite/icon-arrow-left.svg") center no-repeat;
+      background-size: contain;
       position: absolute;
       top: 25%;
       left: 0;
@@ -23,12 +25,13 @@
       height: 10px;
 
       @include vp-1023 {
-        width: 255px;
-      }
+        width: 264px;
     }
-
+  }
     &::after {
-      content: url("/images/sprite/icon-arrow-right.svg");
+      content: "";
+      background: url("/images/sprite/icon-arrow-right.svg") center no-repeat;
+      background-size: contain;
       position: absolute;
       top: 25%;
       right: 10px;
@@ -36,7 +39,7 @@
       height: 10px;
 
       @include vp-1023 {
-        max-width: 255px;
+        width: 264px;
       }
       
     }
@@ -53,9 +56,8 @@
       @include vp-1023 {
         font-size: 90px;
         line-height: 70px;
+        margin: 0 0 15px;
       }
-
-     
 
       span {
         font-size: 34px;

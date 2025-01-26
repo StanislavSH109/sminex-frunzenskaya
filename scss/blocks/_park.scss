@@ -1,6 +1,10 @@
 .park {
   padding: 55px 0 120px;
 
+  @include vp-1023 {
+    padding: 60px 0 82px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
