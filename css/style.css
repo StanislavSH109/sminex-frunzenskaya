@@ -753,6 +753,8 @@ li::marker {
     display: flex;
     flex-direction: row;
     gap: unset;
+    padding: 0;
+    margin: 0;
   }
 }
 .card-arch__list {
@@ -762,6 +764,27 @@ li::marker {
   padding: 0;
   gap: 60px;
 }
+.card-arch__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .card-arch__item {
+    justify-content: unset;
+  }
+}
+.card-arch__item:nth-child(2) {
+  padding: 20px 0 0;
+}
+.card-arch__item:nth-child(3) .card-arch__text {
+  margin: 0 0 20px;
+}
+.card-arch__item:last-child {
+  padding: 80px 0 0;
+}
 .card-arch__icon {
   display: none;
 }
@@ -770,6 +793,7 @@ li::marker {
     display: block;
     width: 40px;
     height: 40px;
+    margin: 0 0 20px;
   }
 }
 .card-arch__logo {
@@ -854,12 +878,24 @@ li::marker {
   color: #c49a6c;
   margin: 0 0 10px;
 }
+@media (max-width: 1023px) {
+  .card-arch__numbers {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 .card-arch__numbers span {
   font-family: "Tenor Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #c49a6c;
   text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+  .card-arch__numbers span {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .card-arch__numbers-big {
   display: block;
@@ -878,6 +914,12 @@ li::marker {
   margin: 0;
   width: 192px;
   text-align: center;
+}
+@media (max-width: 1023px) {
+  .card-arch__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .card-arch__text-decor {
   text-align: center;
@@ -909,17 +951,29 @@ li::marker {
 @media (max-width: 1023px) {
   .infrastructure__wrapper {
     flex-direction: column;
+    gap: 60px;
   }
 }
 .infrastructure__list {
   -moz-columns: 2;
        columns: 2;
   gap: 40px;
-  padding: 10px 0 0 20px;
+  padding: 0 0 0 20px;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .infrastructure__list {
+    gap: 64px;
+    padding: 0 0 0 15px;
+  }
 }
 .infrastructure__item:not(:last-child) {
   margin: 0 0 15px;
+}
+@media (max-width: 1023px) {
+  .infrastructure__item:not(:last-child) {
+    margin: 0 0 10px;
+  }
 }
 .infrastructure__text {
   font-size: 18px;
@@ -931,6 +985,7 @@ li::marker {
   .infrastructure__text {
     font-size: 14px;
     line-height: 20px;
+    margin: 0 0 20px;
   }
 }
 .infrastructure__item-text {
