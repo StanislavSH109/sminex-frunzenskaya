@@ -1,9 +1,17 @@
 .park {
-  padding: 0 0 120px;
+  padding: 55px 0 120px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: repeat(2, 340px);
+      gap: 50px;
+    }
+
   }
 
   &__description {
@@ -20,6 +28,12 @@
     font-weight: 400;
     letter-spacing: -0.08em;
     margin: 0 0 30px -10px;
+
+    @include vp-1023 {
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0 0 20px;
+    }
   }
 
   &__list {
@@ -29,11 +43,26 @@
     padding: 0;
     gap: 15px;
     color: $color-white;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
     width: 495px;
+
+    @include vp-1023 {
+      width: 340px;
+      padding: 0 0 0 14px;
+      gap: 10px;
+    }
+
+    &-item {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+
+      @include vp-1023 {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
+
 
 
 }

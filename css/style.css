@@ -748,6 +748,8 @@ li::marker {
   .card-arch--statistic {
     border-radius: unset;
     border: none;
+    min-height: unset;
+    height: unset;
   }
   .card-arch--statistic .card-arch__list {
     display: flex;
@@ -940,7 +942,7 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .infrastructure {
-    padding: 80px 0;
+    padding: 80px 0 0;
   }
 }
 .infrastructure__wrapper {
@@ -1005,12 +1007,19 @@ li::marker {
 }
 
 .park {
-  padding: 0 0 120px;
+  padding: 55px 0 120px;
 }
 .park__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1023px) {
+  .park__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 50px;
+  }
 }
 .park__description {
   max-width: 480px;
@@ -1026,6 +1035,13 @@ li::marker {
   letter-spacing: -0.08em;
   margin: 0 0 30px -10px;
 }
+@media (max-width: 1023px) {
+  .park__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 20px;
+  }
+}
 .park__list {
   display: flex;
   flex-direction: column;
@@ -1033,10 +1049,25 @@ li::marker {
   padding: 0;
   gap: 15px;
   color: #ffffff;
+  width: 495px;
+}
+@media (max-width: 1023px) {
+  .park__list {
+    width: 340px;
+    padding: 0 0 0 14px;
+    gap: 10px;
+  }
+}
+.park__list-item {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  width: 495px;
+}
+@media (max-width: 1023px) {
+  .park__list-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .info {
@@ -1062,6 +1093,11 @@ li::marker {
   width: 490px;
   height: 10px;
 }
+@media (max-width: 1023px) {
+  .info__block::before {
+    width: 255px;
+  }
+}
 .info__block::after {
   content: url("/images/sprite/icon-arrow-right.svg");
   position: absolute;
@@ -1069,6 +1105,11 @@ li::marker {
   right: 10px;
   width: 490px;
   height: 10px;
+}
+@media (max-width: 1023px) {
+  .info__block::after {
+    max-width: 255px;
+  }
 }
 .info__block-numbers {
   font-size: 140px;
@@ -1078,6 +1119,12 @@ li::marker {
   font-family: "Tenor Sans", "Arial", sans-serif;
   color: #c49a6c;
   margin: 0 0 20px;
+}
+@media (max-width: 1023px) {
+  .info__block-numbers {
+    font-size: 90px;
+    line-height: 70px;
+  }
 }
 .info__block-numbers span {
   font-size: 34px;
@@ -1092,6 +1139,12 @@ li::marker {
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .info__block-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .architecture {

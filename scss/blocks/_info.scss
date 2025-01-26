@@ -21,6 +21,10 @@
       left: 0;
       width: 490px;
       height: 10px;
+
+      @include vp-1023 {
+        width: 255px;
+      }
     }
 
     &::after {
@@ -30,6 +34,11 @@
       right: 10px;
       width: 490px;
       height: 10px;
+
+      @include vp-1023 {
+        max-width: 255px;
+      }
+      
     }
     
     &-numbers {
@@ -40,6 +49,11 @@
       font-family: $ff-tenor;
       color: $color-fallow;
       margin: 0 0 20px;
+
+      @include vp-1023 {
+        font-size: 90px;
+        line-height: 70px;
+      }
 
      
 
@@ -58,6 +72,11 @@
       line-height: 26px;
       font-weight: 400;
       color: $color-white;
+
+      @include vp-1023 {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 
