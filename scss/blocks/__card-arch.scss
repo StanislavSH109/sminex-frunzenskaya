@@ -43,6 +43,19 @@
     width: 400px;
     height: 700px;
     padding: 40px 0 0;
+
+    
+
+    @include vp-1023 {
+      border-radius: unset;
+      border: none;
+
+      .card-arch__list {
+        display: flex;
+        flex-direction: row;
+        gap: unset;
+      }
+    }
   }
   
   &__list {
@@ -51,6 +64,16 @@
     list-style: none;
     padding: 0;
     gap: 60px;
+  }
+
+  &__icon {
+    display: none;
+
+    @include vp-1023 {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__logo {
