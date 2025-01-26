@@ -12,6 +12,8 @@
   @include vp-1023 {
     justify-content: unset;
     padding: 40px 0 0;
+    width: 233px;
+    // gap: 20px;
   }
 
   img {
@@ -77,21 +79,23 @@
 
     @include vp-1023 {
       justify-content: unset;
+
+      &__item:nth-child(2) {
+        padding: 20px 0 0;
+      }
+    
+      &__item:nth-child(3) .card-arch__text {
+        margin: 0 0 20px;
+      }
+    
+      &__item:last-child {
+        padding: 80px 0 0;
+      }
+    
     }
   }
 
-  &__item:nth-child(2) {
-    padding: 20px 0 0;
-  }
-
-  &__item:nth-child(3) .card-arch__text {
-    margin: 0 0 20px;
-  }
-
-  &__item:last-child {
-    padding: 80px 0 0;
-  }
-
+  
   &__icon {
     display: none;
 
