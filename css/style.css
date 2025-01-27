@@ -625,6 +625,11 @@ li::marker {
     max-width: 520px;
   }
 }
+@media (max-width: 767px) {
+  .hero__title {
+    display: none;
+  }
+}
 
 .btn {
   display: flex;
