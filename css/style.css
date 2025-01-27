@@ -389,6 +389,11 @@ li::marker {
     padding: 0 20px;
   }
 }
+@media (max-width: 1580px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -778,7 +783,6 @@ li::marker {
   border: 1px solid #c49a6c;
   border-bottom: none;
   min-height: 700px;
-  width: 400px;
 }
 @media (max-width: 1023px) {
   .card-arch {
@@ -794,9 +798,13 @@ li::marker {
     width: 160px;
   }
 }
+.card-arch--layout {
+  min-height: unset;
+  padding: 243px 23px 243px;
+}
 @media (max-width: 1023px) {
   .card-arch--layout {
-    padding: 125px 40px 130px;
+    padding: 243px 23px 243px;
   }
 }
 @media (max-width: 767px) {
@@ -808,9 +816,24 @@ li::marker {
   border: unset;
   padding: 0;
 }
+@media (max-width: 1400px) {
+  .card-arch--image {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .card-arch--image {
+    width: 100%;
+  }
+}
 .card-arch--main {
   width: 456px;
   min-height: 600px;
+}
+@media (max-width: 1400px) {
+  .card-arch--main {
+    width: 100%;
+  }
 }
 @media (max-width: 1023px) {
   .card-arch--main {
@@ -825,9 +848,7 @@ li::marker {
   }
 }
 .card-arch--statistic {
-  width: 400px;
-  height: 700px;
-  padding: 40px 0 0;
+  padding: 40px 104px 0;
 }
 @media (max-width: 1023px) {
   .card-arch--statistic {
@@ -1151,6 +1172,11 @@ li::marker {
   padding: 0 0 0 20px;
   margin: 0;
 }
+@media (max-width: 1400px) {
+  .infrastructure__list {
+    gap: unset;
+  }
+}
 @media (max-width: 1023px) {
   .infrastructure__list {
     gap: 64px;
@@ -1222,6 +1248,11 @@ li::marker {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1600px) {
+  .park__wrapper {
+    gap: 40px;
+  }
 }
 @media (max-width: 1023px) {
   .park__wrapper {
@@ -1327,6 +1358,12 @@ li::marker {
   width: 490px;
   height: 10px;
 }
+@media (max-width: 1230px) {
+  .info__block::before {
+    width: 364px;
+    background-size: contain;
+  }
+}
 @media (max-width: 1023px) {
   .info__block::before {
     width: 264px;
@@ -1346,6 +1383,12 @@ li::marker {
   right: 10px;
   width: 490px;
   height: 10px;
+}
+@media (max-width: 1230px) {
+  .info__block::after {
+    width: 364px;
+    background-size: contain;
+  }
 }
 @media (max-width: 1023px) {
   .info__block::after {
@@ -1482,12 +1525,17 @@ li::marker {
   }
 }
 .architecture__list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   gap: 84px;
   padding: 0;
   list-style: none;
   margin: 0;
+}
+@media (max-width: 1400px) {
+  .architecture__list {
+    gap: unset;
+  }
 }
 @media (max-width: 1023px) {
   .architecture__list {
@@ -1522,7 +1570,7 @@ li::marker {
 }
 .apartments__wrapper {
   display: grid;
-  grid-template-columns: 485px 800px;
+  grid-template-columns: 485px auto;
   gap: 85px;
   align-items: center;
 }

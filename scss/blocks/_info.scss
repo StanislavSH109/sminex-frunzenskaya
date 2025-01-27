@@ -31,6 +31,11 @@
       width: 490px;
       height: 10px;
 
+      @media (max-width: 1230px) {
+        width: 364px;
+        background-size: contain;
+      }
+
       @include vp-1023 {
         width: 264px;
         background-size: contain;
@@ -50,6 +55,11 @@
       right: 10px;
       width: 490px;
       height: 10px;
+
+      @media (max-width: 1230px) {
+        width: 364px;
+        background-size: contain;
+      }
 
       @include vp-1023 {
         width: 264px;

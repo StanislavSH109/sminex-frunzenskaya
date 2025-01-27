@@ -11,7 +11,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 485px 800px;
+    grid-template-columns: 485px auto;
     gap: 85px;
     align-items: center;
 
