@@ -1194,6 +1194,11 @@ li::marker {
     padding: 60px 0 82px;
   }
 }
+@media (max-width: 767px) {
+  .park {
+    padding: 50px 0 0;
+  }
+}
 .park__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1204,6 +1209,13 @@ li::marker {
     display: grid;
     grid-template-columns: repeat(2, 340px);
     gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .park__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 .park__description {
@@ -1225,6 +1237,13 @@ li::marker {
     font-size: 24px;
     line-height: 30px;
     margin: 0 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .park__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 15px;
   }
 }
 .park__list {
