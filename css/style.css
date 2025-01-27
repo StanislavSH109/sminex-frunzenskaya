@@ -406,6 +406,23 @@ li::marker {
 
 /* Blocks */
 /* ------------------------------------ */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  color: #c49a6c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 0px 40px 0px 40px;
+  border: 1px solid #c49a6c;
+  cursor: pointer;
+  padding: 14px;
+  background-color: #390417;
+}
+
 .header {
   padding: 20px 0 19px;
   border-bottom: 1px solid #e2e2e2;
@@ -1243,9 +1260,22 @@ li::marker {
   gap: 85px;
   align-items: center;
 }
+@media (max-width: 1023px) {
+  .apartments__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .apartments__description {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1023px) {
+  .apartments__description {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 .apartments__description-title {
   margin: 0 0 30px;
@@ -1257,12 +1287,30 @@ li::marker {
   color: #c49a6c;
   text-transform: uppercase;
 }
+@media (max-width: 1023px) {
+  .apartments__description-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .apartments__description-text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
   margin: 0 0 40px;
+}
+@media (max-width: 1023px) {
+  .apartments__description-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .apartments__description-btn {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .apartments__list {
   display: flex;
@@ -1314,23 +1362,6 @@ li::marker {
 }
 .socials__link:hover, .socials__link:focus-visible {
   color: #D6D2C4;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  color: #c49a6c;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  border-radius: 0px 40px 0px 40px;
-  border: 1px solid #c49a6c;
-  cursor: pointer;
-  padding: 14px;
-  background-color: #390417;
 }
 
 .footer {
