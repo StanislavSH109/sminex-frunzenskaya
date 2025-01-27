@@ -1,5 +1,17 @@
 .embankment {
 
+  &__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.08em;
+    font-family: $ff-tenor;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 0 0;
+  }
+
   &__wrapper {
     display: flex;
     padding: 120px 0;
@@ -25,6 +37,11 @@
       .embankment__item:last-child {
         display: none;
       }
+    }
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
     }
   }
 

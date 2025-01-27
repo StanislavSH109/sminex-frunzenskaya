@@ -22,6 +22,10 @@
     min-height: 460px;
   }
 
+  @include vp-767 {
+    min-height: 300px;
+  }
+
   &__title {
     font-size: 60px;
     font-family: $ff-tenor;
@@ -44,6 +48,5 @@
       display: none;
     }
   }
-
  
 }

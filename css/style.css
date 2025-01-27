@@ -606,6 +606,11 @@ li::marker {
     min-height: 460px;
   }
 }
+@media (max-width: 767px) {
+  .hero {
+    min-height: 300px;
+  }
+}
 .hero__title {
   font-size: 60px;
   font-family: "Tenor Sans", "Arial", sans-serif;
@@ -648,6 +653,17 @@ li::marker {
   background-color: #390417;
 }
 
+.embankment__title {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.08em;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0 0;
+}
 .embankment__wrapper {
   display: flex;
   padding: 120px 0;
@@ -673,6 +689,12 @@ li::marker {
 @media (max-width: 1023px) {
   .embankment__list .embankment__item:last-child {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .embankment__list {
+    display: flex;
+    flex-direction: column;
   }
 }
 .embankment__description {
@@ -748,9 +770,6 @@ li::marker {
     padding: 125px 40px 130px;
   }
 }
-.card-arch img {
-  border-radius: 0 0 250px 250px;
-}
 .card-arch--image {
   border: unset;
   padding: 0;
@@ -787,6 +806,9 @@ li::marker {
     padding: 0;
     margin: 0;
   }
+}
+.card-arch img {
+  border-radius: 0 0 250px 250px;
 }
 .card-arch__list {
   display: flex;
