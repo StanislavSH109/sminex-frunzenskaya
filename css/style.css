@@ -770,6 +770,11 @@ li::marker {
     min-height: unset;
   }
 }
+@media (max-width: 767px) {
+  .card-arch {
+    padding: 25px 0 0;
+  }
+}
 @media (max-width: 1023px) {
   .card-arch--layout {
     padding: 125px 40px 130px;
@@ -871,6 +876,12 @@ li::marker {
     margin: 0 0 20px;
   }
 }
+@media (max-width: 767px) {
+  .card-arch__logo {
+    width: 58px;
+    height: 82px;
+  }
+}
 .card-arch__logo-text {
   color: #c49a6c;
   font-size: 18px;
@@ -886,6 +897,13 @@ li::marker {
     line-height: 20px;
     letter-spacing: 0.2em;
     margin: 0 0 2px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch__logo-text {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 0 10px;
   }
 }
 .card-arch__title {
@@ -906,6 +924,14 @@ li::marker {
     margin: 0 0 20px;
   }
 }
+@media (max-width: 767px) {
+  .card-arch__title {
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+}
 .card-arch__location-logo {
   width: 16px;
   height: 22px;
@@ -915,6 +941,11 @@ li::marker {
   .card-arch__location-logo {
     width: 13px;
     height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch__location-logo {
+    margin: 0;
   }
 }
 .card-arch__address {
