@@ -1340,6 +1340,13 @@ li::marker {
     margin: 0 0 15px;
   }
 }
+@media (max-width: 767px) {
+  .info__block-numbers {
+    font-size: 70px;
+    line-height: 50px;
+    margin: 0 0 10px;
+  }
+}
 .info__block-numbers span {
   font-size: 34px;
   line-height: 44px;
