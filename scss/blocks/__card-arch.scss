@@ -35,6 +35,11 @@
       width: 266px;
       min-height: 350px;
     }
+
+    @include vp-767 {
+      width: 220px;
+      min-height: 290px;
+    }
   }
 
   &--reverse {

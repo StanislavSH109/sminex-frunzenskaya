@@ -678,6 +678,11 @@ li::marker {
     gap: 80px;
   }
 }
+@media (max-width: 767px) {
+  .embankment__wrapper {
+    padding: 60px 0;
+  }
+}
 .embankment__list {
   display: flex;
   justify-content: center;
@@ -782,6 +787,12 @@ li::marker {
   .card-arch--main {
     width: 266px;
     min-height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch--main {
+    width: 220px;
+    min-height: 290px;
   }
 }
 .card-arch--reverse img {
