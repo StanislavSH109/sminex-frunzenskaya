@@ -406,23 +406,6 @@ li::marker {
 
 /* Blocks */
 /* ------------------------------------ */
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  color: #c49a6c;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  border-radius: 0px 40px 0px 40px;
-  border: 1px solid #c49a6c;
-  cursor: pointer;
-  padding: 14px;
-  background-color: #390417;
-}
-
 .header {
   padding: 20px 0 19px;
   border-bottom: 1px solid #e2e2e2;
@@ -641,6 +624,23 @@ li::marker {
     line-height: 46px;
     max-width: 520px;
   }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  color: #c49a6c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 0px 40px 0px 40px;
+  border: 1px solid #c49a6c;
+  cursor: pointer;
+  padding: 14px;
+  background-color: #390417;
 }
 
 .embankment__wrapper {
