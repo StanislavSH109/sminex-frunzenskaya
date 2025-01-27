@@ -4,6 +4,10 @@
   @include vp-1023 {
     padding: 0 0 80px;
   }
+
+  @include vp-767 {
+    padding: 60px 0 0;
+  }
   
   &__wrapper {
     display: flex;
@@ -30,7 +34,12 @@
       @include vp-1023 {
         width: 264px;
         background-size: contain;
-    }
+      }
+
+      @include vp-767 {
+        width: 84px;
+      }
+
   }
     &::after {
       content: "";
@@ -45,6 +54,10 @@
       @include vp-1023 {
         width: 264px;
         background-size: contain;
+      }
+
+      @include vp-767 {
+        width: 84px;
       }
       
     }
