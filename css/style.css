@@ -1284,7 +1284,7 @@ li::marker {
 }
 @media (max-width: 767px) {
   .info {
-    padding: 60px 0 0;
+    padding: 60px 0 60px;
   }
 }
 .info__wrapper {
@@ -1402,6 +1402,11 @@ li::marker {
     margin: 0 0 15px;
   }
 }
+@media (max-width: 767px) {
+  .architecture__wrapper {
+    flex-direction: column;
+  }
+}
 .architecture__title {
   margin: 0;
   font-size: 34px;
@@ -1421,6 +1426,14 @@ li::marker {
     width: 230px;
   }
 }
+@media (max-width: 767px) {
+  .architecture__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 15px;
+    text-align: center;
+  }
+}
 .architecture__description {
   padding: 0;
   font-size: 18px;
@@ -1436,6 +1449,11 @@ li::marker {
     font-size: 14px;
     line-height: 20px;
     width: 230px;
+  }
+}
+@media (max-width: 767px) {
+  .architecture__description {
+    width: 250px;
   }
 }
 .architecture__list {
