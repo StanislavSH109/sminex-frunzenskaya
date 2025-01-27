@@ -791,11 +791,17 @@ li::marker {
 @media (max-width: 767px) {
   .card-arch {
     padding: 25px 0 0;
+    width: 160px;
   }
 }
 @media (max-width: 1023px) {
   .card-arch--layout {
     padding: 125px 40px 130px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch--layout {
+    padding: 84px 25px 83px;
   }
 }
 .card-arch--image {
@@ -817,9 +823,6 @@ li::marker {
     width: 220px;
     min-height: 290px;
   }
-}
-.card-arch--reverse img {
-  border-radius: 250px 250px 0 0;
 }
 .card-arch--statistic {
   width: 400px;
@@ -850,6 +853,9 @@ li::marker {
 }
 .card-arch img {
   border-radius: 0 0 250px 250px;
+}
+.card-arch--reverse img {
+  border-radius: 250px 250px 0 0;
 }
 .card-arch__list {
   display: flex;
@@ -1061,6 +1067,13 @@ li::marker {
     margin: 0 0 5px;
   }
 }
+@media (max-width: 767px) {
+  .card-arch__numbers-big {
+    font-size: 70px;
+    line-height: 50px;
+    margin: 0;
+  }
+}
 .card-arch__text {
   font-size: 18px;
   line-height: 26px;
@@ -1098,6 +1111,12 @@ li::marker {
     font-size: 14px;
     line-height: 18px;
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch__text-decor {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -1391,6 +1410,11 @@ li::marker {
     padding: 0 0 80px;
   }
 }
+@media (max-width: 767px) {
+  .architecture {
+    padding: 0 0 60px;
+  }
+}
 .architecture__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1405,6 +1429,7 @@ li::marker {
 @media (max-width: 767px) {
   .architecture__wrapper {
     flex-direction: column;
+    margin: 0 0 40px;
   }
 }
 .architecture__title {
@@ -1469,6 +1494,18 @@ li::marker {
     gap: 19px;
   }
 }
+@media (max-width: 767px) {
+  .architecture__list {
+    gap: 10px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    padding: 0 0 0 170px;
+    margin: 0 0 0 -10px;
+  }
+  .architecture__list::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 .apartments {
   padding: 0 0 120px;
@@ -1476,6 +1513,11 @@ li::marker {
 @media (max-width: 1023px) {
   .apartments {
     padding: 0 0 75px;
+  }
+}
+@media (max-width: 767px) {
+  .apartments {
+    padding: 0 0 60px;
   }
 }
 .apartments__wrapper {
@@ -1489,6 +1531,12 @@ li::marker {
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .apartments__wrapper {
+    width: 295px;
+    padding: 0 0 0 30px;
   }
 }
 .apartments__description {
@@ -1518,6 +1566,12 @@ li::marker {
     font-size: 24px;
     line-height: 30px;
     margin: 0 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .apartments__description-title {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 .apartments__description-text {
@@ -1568,6 +1622,11 @@ li::marker {
 @media (max-width: 1023px) {
   .reception {
     height: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .reception {
+    height: 200px;
   }
 }
 

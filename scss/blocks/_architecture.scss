@@ -5,6 +5,10 @@
     padding: 0 0 80px;
   }
 
+  @include vp-767 {
+    padding: 0 0 60px
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -17,6 +21,7 @@
 
     @include vp-767 {
       flex-direction: column;
+      margin: 0 0 40px;
     }
   }
 
@@ -77,6 +82,17 @@
 
     @include vp-1023 {
       gap: 19px;
+    }
+
+    @include vp-767 {
+      gap: 10px;
+      overflow: auto;
+      flex-wrap: nowrap;
+      padding: 0 0 0 170px;
+      margin: 0 0 0 -10px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }
