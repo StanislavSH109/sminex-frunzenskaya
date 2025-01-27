@@ -1,6 +1,10 @@
 .apartments {
   padding: 0 0 120px;
 
+  @include vp-1023 {
+    padding: 0 0 75px;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 485px 800px;
@@ -10,17 +14,20 @@
     @include vp-1023 {
       display: flex;
       flex-direction: column;
+      gap: 40px;
     }
   }
 
   &__description {
     display: flex;
     flex-direction: column;
+    
 
     @include vp-1023 {
       justify-content: center;
       align-items: center;
       text-align: center;
+      max-width: 350px;
     }
 
     &-title {
@@ -36,6 +43,7 @@
       @include vp-1023 {
         font-size: 24px;
         line-height: 30px;
+        margin: 0 0 15px;
       }
     }
 
@@ -49,6 +57,7 @@
       @include vp-1023 {
         font-size: 14px;
         line-height: 20px;
+        margin: 0 0 20px;
       }
     }
 
@@ -56,6 +65,8 @@
       @include vp-1023 {
         font-size: 14px;
         line-height: 20px;
+        width: 180px;
+        padding: 15px;
       }
     }
 

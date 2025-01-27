@@ -13,6 +13,13 @@
     justify-content: unset;
     padding: 40px 0 0;
     width: 233px;
+    min-height: unset;
+  }
+
+  &--layout {
+    @include vp-1023 {
+      padding: 125px 40px 130px;
+    }
   }
 
   img {
@@ -217,6 +224,12 @@
     letter-spacing: -0.04em;
     margin: 0 0 40px;
     color: $color-fallow;
+
+    @include vp-1023 {
+      font-size: 90px;
+      line-height: 70px;
+      margin: 0 0 5px;
+    }
   }
 
   &__text {

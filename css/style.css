@@ -735,6 +735,12 @@ li::marker {
     justify-content: unset;
     padding: 40px 0 0;
     width: 233px;
+    min-height: unset;
+  }
+}
+@media (max-width: 1023px) {
+  .card-arch--layout {
+    padding: 125px 40px 130px;
   }
 }
 .card-arch img {
@@ -926,6 +932,13 @@ li::marker {
   letter-spacing: -0.04em;
   margin: 0 0 40px;
   color: #c49a6c;
+}
+@media (max-width: 1023px) {
+  .card-arch__numbers-big {
+    font-size: 90px;
+    line-height: 70px;
+    margin: 0 0 5px;
+  }
 }
 .card-arch__text {
   font-size: 18px;
@@ -1190,6 +1203,11 @@ li::marker {
 .architecture {
   padding: 0 0 120px;
 }
+@media (max-width: 1023px) {
+  .architecture {
+    padding: 0 0 80px;
+  }
+}
 .architecture__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1254,6 +1272,11 @@ li::marker {
 .apartments {
   padding: 0 0 120px;
 }
+@media (max-width: 1023px) {
+  .apartments {
+    padding: 0 0 75px;
+  }
+}
 .apartments__wrapper {
   display: grid;
   grid-template-columns: 485px 800px;
@@ -1264,6 +1287,7 @@ li::marker {
   .apartments__wrapper {
     display: flex;
     flex-direction: column;
+    gap: 40px;
   }
 }
 .apartments__description {
@@ -1275,6 +1299,7 @@ li::marker {
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 350px;
   }
 }
 .apartments__description-title {
@@ -1291,6 +1316,7 @@ li::marker {
   .apartments__description-title {
     font-size: 24px;
     line-height: 30px;
+    margin: 0 0 15px;
   }
 }
 .apartments__description-text {
@@ -1304,12 +1330,15 @@ li::marker {
   .apartments__description-text {
     font-size: 14px;
     line-height: 20px;
+    margin: 0 0 20px;
   }
 }
 @media (max-width: 1023px) {
   .apartments__description-btn {
     font-size: 14px;
     line-height: 20px;
+    width: 180px;
+    padding: 15px;
   }
 }
 .apartments__list {
@@ -1333,6 +1362,11 @@ li::marker {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .reception {
     background-image: url("/images/reception@2x.png");
+  }
+}
+@media (max-width: 1023px) {
+  .reception {
+    height: 280px;
   }
 }
 

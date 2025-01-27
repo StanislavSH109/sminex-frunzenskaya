@@ -1,6 +1,10 @@
 .architecture {
   padding: 0 0 120px;
 
+  @include vp-1023 {
+    padding: 0 0 80px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
