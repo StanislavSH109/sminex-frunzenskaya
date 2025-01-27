@@ -1,6 +1,7 @@
 .embankment {
 
   &__title {
+    display: none;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: -0.08em;
@@ -10,6 +11,10 @@
     text-transform: uppercase;
     margin: 0;
     padding: 20px 0 0;
+
+    @include vp-767 {
+      display: block;
+    }
   }
 
   &__wrapper {
@@ -27,6 +32,7 @@
 
     @include vp-767 {
       padding: 60px 0;
+      gap: 64px;
     }
   }
 
@@ -66,6 +72,11 @@
     @include vp-1023 {
       font-size: 24px;
       line-height: 30px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
     }
 
     &-first-row {
