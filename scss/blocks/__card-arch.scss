@@ -70,7 +70,7 @@
   }
 
   &--statistic {
-    padding: 40px 104px 0;
+    padding: 100px 104px 0;
 
     @include vp-1023 {
       border-radius: unset;
@@ -111,6 +111,7 @@
     list-style: none;
     padding: 0;
     gap: 60px;
+    margin: 0;
   }
 
   &__item {

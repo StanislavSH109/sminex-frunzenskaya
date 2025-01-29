@@ -843,7 +843,7 @@ li::marker {
   }
 }
 .card-arch--statistic {
-  padding: 40px 104px 0;
+  padding: 100px 104px 0;
 }
 @media (max-width: 1023px) {
   .card-arch--statistic {
@@ -879,6 +879,7 @@ li::marker {
   list-style: none;
   padding: 0;
   gap: 60px;
+  margin: 0;
 }
 .card-arch__item {
   display: flex;
@@ -1159,6 +1160,9 @@ li::marker {
     flex-direction: column;
     gap: 60px;
   }
+}
+.infrastructure__advantages {
+  padding: 50px 0 0;
 }
 .infrastructure__list {
   -moz-columns: 2;
