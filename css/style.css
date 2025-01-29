@@ -791,14 +791,12 @@ li::marker {
   .card-arch {
     justify-content: unset;
     padding: 40px 0 0;
-    width: 233px;
     min-height: unset;
   }
 }
 @media (max-width: 767px) {
   .card-arch {
     padding: 25px 0 0;
-    width: 160px;
   }
 }
 .card-arch--layout {

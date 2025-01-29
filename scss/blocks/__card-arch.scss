@@ -10,13 +10,11 @@
   @include vp-1023 {
     justify-content: unset;
     padding: 40px 0 0;
-    width: 233px;
     min-height: unset;
   }
 
   @include vp-767 {
     padding: 25px 0 0;
-    width: 160px;
   }
 
   &--layout {
