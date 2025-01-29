@@ -6,7 +6,6 @@
   border-radius: 250px 250px 0 0;
   border: 1px solid $color-fallow;
   border-bottom: none;
-  min-height: 700px;
 
   @include vp-1023 {
     justify-content: unset;
@@ -21,7 +20,7 @@
   }
 
   &--layout {
-
+    display: flex;
     min-height: unset;
     padding: 243px 23px 243px;
 
@@ -39,7 +38,7 @@
     padding: 0;
 
     @media (max-width: 1400px) {
-      width: 100%;
+      // width: 100%;
     }
 
     @media (max-width: 1080px) {
@@ -47,7 +46,7 @@
     }
 
     @include vp-1023 {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -346,7 +345,7 @@
 
   &__text-decor {
     text-align: center;
-    width: 350px;
+    max-width: 350px;
     margin: 0;
     padding: 0;
     font-size: 20px;

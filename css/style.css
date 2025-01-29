@@ -782,7 +782,6 @@ li::marker {
   border-radius: 250px 250px 0 0;
   border: 1px solid #c49a6c;
   border-bottom: none;
-  min-height: 700px;
 }
 @media (max-width: 1023px) {
   .card-arch {
@@ -799,6 +798,7 @@ li::marker {
   }
 }
 .card-arch--layout {
+  display: flex;
   min-height: unset;
   padding: 243px 23px 243px;
 }
@@ -816,14 +816,9 @@ li::marker {
   border: unset;
   padding: 0;
 }
-@media (max-width: 1400px) {
-  .card-arch--image {
-    width: 100%;
-  }
-}
 @media (max-width: 1023px) {
   .card-arch--image {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .card-arch--main {
@@ -1116,7 +1111,7 @@ li::marker {
 }
 .card-arch__text-decor {
   text-align: center;
-  width: 350px;
+  max-width: 350px;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -1490,7 +1485,7 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .architecture__list {
-    gap: 19px;
+    gap: 18px;
   }
 }
 @media (max-width: 767px) {
