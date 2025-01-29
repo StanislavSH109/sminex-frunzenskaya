@@ -658,6 +658,9 @@ li::marker {
   background-color: #390417;
 }
 
+.embankment {
+  margin: 0 0 125px;
+}
 .embankment__title {
   display: none;
   font-size: 28px;
@@ -677,11 +680,10 @@ li::marker {
 }
 .embankment__wrapper {
   display: flex;
-  padding: 120px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 120px;
+  gap: 25px;
 }
 @media (max-width: 1023px) {
   .embankment__wrapper {
@@ -696,7 +698,8 @@ li::marker {
   }
 }
 .embankment__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -823,7 +826,6 @@ li::marker {
 }
 .card-arch--main {
   width: 456px;
-  min-height: 600px;
 }
 @media (max-width: 1400px) {
   .card-arch--main {
@@ -833,13 +835,11 @@ li::marker {
 @media (max-width: 1023px) {
   .card-arch--main {
     width: 266px;
-    min-height: 350px;
   }
 }
 @media (max-width: 767px) {
   .card-arch--main {
     width: 220px;
-    min-height: 290px;
   }
 }
 .card-arch--statistic {
@@ -882,6 +882,13 @@ li::marker {
 }
 .card-arch--reverse img {
   border-radius: 250px 250px 0 0;
+}
+.card-arch__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 98px 38px 91px;
 }
 .card-arch__list {
   display: flex;

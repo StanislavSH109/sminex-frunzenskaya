@@ -52,7 +52,6 @@
 
   &--main {
     width: 456px;
-    min-height: 600px;
 
     @media (max-width: 1400px) {
       width: 100%;
@@ -60,12 +59,12 @@
 
     @include vp-1023 {
       width: 266px;
-      min-height: 350px;
+
     }
 
     @include vp-767 {
       width: 220px;
-      min-height: 290px;
+
     }
   }
 
@@ -112,6 +111,13 @@
     }
   }
 
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 98px 38px 91px;
+  }
   
   &__list {
     display: flex;
