@@ -384,12 +384,12 @@ li::marker {
   margin: 0 auto;
   padding: 0 180px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1730px) {
   .container {
     padding: 0 20px;
   }
 }
-@media (max-width: 1580px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 20px;
   }
@@ -600,6 +600,7 @@ li::marker {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0 0 30px;
+  margin: 0 0 120px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
@@ -659,7 +660,7 @@ li::marker {
 }
 
 .embankment {
-  margin: 0 0 125px;
+  margin: 0 0 115px;
 }
 .embankment__title {
   display: none;
@@ -683,7 +684,7 @@ li::marker {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 120px;
 }
 @media (max-width: 1023px) {
   .embankment__wrapper {
@@ -822,24 +823,6 @@ li::marker {
 @media (max-width: 1023px) {
   .card-arch--image {
     max-width: 100%;
-  }
-}
-.card-arch--main {
-  width: 456px;
-}
-@media (max-width: 1400px) {
-  .card-arch--main {
-    width: 100%;
-  }
-}
-@media (max-width: 1023px) {
-  .card-arch--main {
-    width: 266px;
-  }
-}
-@media (max-width: 767px) {
-  .card-arch--main {
-    width: 220px;
   }
 }
 .card-arch--statistic {
