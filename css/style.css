@@ -1498,7 +1498,6 @@ li::marker {
     gap: 10px;
     overflow: auto;
     flex-wrap: nowrap;
-    padding: 0 0 0 170px;
     margin: 0 0 0 -10px;
   }
   .architecture__list::-webkit-scrollbar {
@@ -1584,7 +1583,6 @@ li::marker {
 @media (max-width: 767px) {
   .apartments__wrapper {
     width: 295px;
-    padding: 0 0 0 30px;
   }
 }
 .apartments__description {
