@@ -49,6 +49,8 @@
       .embankment__item:last-child {
         display: none;
       }
+
+      display: flex;
     }
 
     @include vp-767 {

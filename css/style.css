@@ -708,6 +708,9 @@ li::marker {
   list-style: none;
 }
 @media (max-width: 1023px) {
+  .embankment__list {
+    display: flex;
+  }
   .embankment__list .embankment__item:last-child {
     display: none;
   }
