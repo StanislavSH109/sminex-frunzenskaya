@@ -843,7 +843,12 @@ li::marker {
   }
 }
 .card-arch--statistic {
-  padding: 100px 104px 0;
+  padding: 100px 104px 50px;
+}
+@media (max-width: 1280px) {
+  .card-arch--statistic {
+    padding: 100px 10px 50px;
+  }
 }
 @media (max-width: 1023px) {
   .card-arch--statistic {
@@ -865,6 +870,11 @@ li::marker {
     display: grid;
     grid-template-columns: 120px 120px;
     gap: 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch--statistic {
+    padding: 41px 0 0;
   }
 }
 .card-arch img {
@@ -1138,7 +1148,7 @@ li::marker {
 }
 
 .infrastructure {
-  padding: 120px 0;
+  padding: 120px 0 130px;
 }
 @media (max-width: 1023px) {
   .infrastructure {
@@ -1151,18 +1161,27 @@ li::marker {
   }
 }
 .infrastructure__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 170px;
   align-items: center;
+}
+@media (max-width: 1580px) {
+  .infrastructure__wrapper {
+    gap: 80px;
+  }
+}
+@media (max-width: 1280px) {
+  .infrastructure__wrapper {
+    gap: 20px;
+  }
 }
 @media (max-width: 1023px) {
   .infrastructure__wrapper {
+    display: flex;
     flex-direction: column;
     gap: 60px;
   }
-}
-.infrastructure__advantages {
-  padding: 50px 0 0;
 }
 .infrastructure__list {
   -moz-columns: 2;
@@ -1577,11 +1596,6 @@ li::marker {
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .apartments__wrapper {
-    width: 295px;
   }
 }
 .apartments__description {
