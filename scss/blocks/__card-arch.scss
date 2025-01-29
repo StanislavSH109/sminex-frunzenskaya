@@ -45,10 +45,6 @@
   &--statistic {
     padding: 100px 104px 50px;
 
-    @media (max-width: 1730px) {
-      padding: ;
-    }
-
     @media (max-width: 1280px) {
       padding: 100px 10px 50px;
     }
@@ -213,7 +209,7 @@
     letter-spacing: -0.08em;
     text-align: center;
     text-transform: uppercase;
-    width: 380px;
+    max-width: 380px;
     margin: 0 0 40px;
 
     @include vp-1023 {

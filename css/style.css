@@ -982,7 +982,7 @@ li::marker {
   letter-spacing: -0.08em;
   text-align: center;
   text-transform: uppercase;
-  width: 380px;
+  max-width: 380px;
   margin: 0 0 40px;
 }
 @media (max-width: 1023px) {
