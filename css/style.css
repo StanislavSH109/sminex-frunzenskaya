@@ -611,6 +611,7 @@ li::marker {
 @media (max-width: 767px) {
   .hero {
     min-height: 300px;
+    margin: 0;
   }
 }
 .hero__title {
@@ -663,6 +664,11 @@ li::marker {
     margin: 0 0 80px;
   }
 }
+@media (max-width: 767px) {
+  .embankment {
+    margin: 0 0 55px;
+  }
+}
 .embankment__title {
   display: none;
   font-size: 28px;
@@ -695,13 +701,18 @@ li::marker {
 }
 @media (max-width: 767px) {
   .embankment__wrapper {
-    padding: 90px 0;
-    gap: 64px;
+    padding: 63px 0 0;
+    gap: 60px;
   }
 }
 @media (max-width: 1023px) {
   .embankment__pictures {
-    padding: 0 96px 0 72px;
+    padding: 0 82px 0 72px;
+  }
+}
+@media (max-width: 767px) {
+  .embankment__pictures {
+    padding: 0 70px 0 72px;
   }
 }
 .embankment__list {
@@ -822,11 +833,6 @@ li::marker {
     padding: 84px 25px 83px;
   }
 }
-@media (max-width: 1023px) {
-  .card-arch--main {
-    height: 600;
-  }
-}
 .card-arch--image {
   border: unset;
   padding: 0;
@@ -840,6 +846,11 @@ li::marker {
   }
   .card-arch--image img {
     max-height: 410px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch--image img {
+    height: 285px;
   }
 }
 .card-arch--statistic {
@@ -893,7 +904,12 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .card-arch__inner {
-    padding: 46px 10px 38px;
+    padding: 46px 26px 38px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch__inner {
+    padding: 0 24px 13px;
   }
 }
 .card-arch__list {
@@ -1676,6 +1692,16 @@ li::marker {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .apartments__list {
+    padding: 0 130px 0;
+  }
+}
+@media (max-width: 767px) {
+  .apartments__list {
+    padding: 0;
+  }
 }
 
 .reception {
