@@ -384,11 +384,6 @@ li::marker {
   margin: 0 auto;
   padding: 0 180px;
 }
-@media (max-width: 1730px) {
-  .container {
-    padding: 0 20px;
-  }
-}
 @media (max-width: 1023px) {
   .container {
     padding: 0 20px;
@@ -610,6 +605,7 @@ li::marker {
 @media (max-width: 1023px) {
   .hero {
     min-height: 460px;
+    margin: 0 0 80px;
   }
 }
 @media (max-width: 767px) {
@@ -660,7 +656,12 @@ li::marker {
 }
 
 .embankment {
-  margin: 0 0 115px;
+  margin: 0 0 120px;
+}
+@media (max-width: 1023px) {
+  .embankment {
+    margin: 0 0 80px;
+  }
 }
 .embankment__title {
   display: none;
@@ -688,14 +689,19 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .embankment__wrapper {
-    padding: 80px 0;
-    gap: 80px;
+    padding: 0 20px;
+    gap: 70px;
   }
 }
 @media (max-width: 767px) {
   .embankment__wrapper {
-    padding: 60px 0;
+    padding: 90px 0;
     gap: 64px;
+  }
+}
+@media (max-width: 1023px) {
+  .embankment__pictures {
+    padding: 0 96px 0 72px;
   }
 }
 .embankment__list {
@@ -793,7 +799,6 @@ li::marker {
 @media (max-width: 1023px) {
   .card-arch {
     justify-content: unset;
-    padding: 40px 0 0;
     min-height: unset;
   }
 }
@@ -809,12 +814,17 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .card-arch--layout {
-    padding: 243px 23px 243px;
+    padding: 133px 52px 133px;
   }
 }
 @media (max-width: 767px) {
   .card-arch--layout {
     padding: 84px 25px 83px;
+  }
+}
+@media (max-width: 1023px) {
+  .card-arch--main {
+    height: 600;
   }
 }
 .card-arch--image {
@@ -824,15 +834,12 @@ li::marker {
   height: 100%;
   display: block;
 }
-.card-arch--image img {
-  height: 600px;
-}
 @media (max-width: 1023px) {
   .card-arch--image {
     max-width: 100%;
   }
   .card-arch--image img {
-    max-height: 350px;
+    max-height: 410px;
   }
 }
 .card-arch--statistic {
@@ -849,6 +856,7 @@ li::marker {
     border: none;
     min-height: unset;
     height: unset;
+    padding: 40px 10px 0;
   }
   .card-arch--statistic .card-arch__list {
     display: flex;
@@ -881,7 +889,12 @@ li::marker {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 98px 38px 91px;
+  padding: 92px 38px 91px;
+}
+@media (max-width: 1023px) {
+  .card-arch__inner {
+    padding: 46px 10px 38px;
+  }
 }
 .card-arch__list {
   display: flex;
@@ -950,7 +963,8 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .card-arch__logo {
-    height: 95px;
+    height: 86px;
+    width: 62px;
     margin: 0 0 20px;
   }
 }
@@ -1508,7 +1522,7 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .architecture__list {
-    gap: 18px;
+    gap: 10px;
   }
 }
 @media (max-width: 767px) {

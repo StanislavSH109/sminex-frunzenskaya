@@ -1,5 +1,9 @@
 .embankment {
-  margin: 0 0 115px;
+  margin: 0 0 120px;
+
+  @include vp-1023 {
+    margin: 0 0 80px;
+  }
 
   &__title {
     display: none;
@@ -26,13 +30,19 @@
     gap: 120px;
     
     @include vp-1023 {
-      padding: 80px 0;
-      gap: 80px;
+      padding: 0 20px;
+      gap: 70px;
     }
 
     @include vp-767 {
-      padding: 60px 0;
+      padding: 90px 0;
       gap: 64px;
+    }
+  }
+
+  &__pictures {
+    @include vp-1023 {
+      padding: 0 96px 0 72px;
     }
   }
 

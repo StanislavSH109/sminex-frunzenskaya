@@ -9,7 +9,6 @@
 
   @include vp-1023 {
     justify-content: unset;
-    padding: 40px 0 0;
     min-height: unset;
   }
 
@@ -23,11 +22,17 @@
     padding: 243px 23px 243px;
 
     @include vp-1023 {
-      padding: 243px 23px 243px;
+      padding: 133px 52px 133px;
     }
 
     @include vp-767 {
       padding: 84px 25px 83px;
+    }
+  }
+
+  &--main {
+    @include vp-1023 {
+      height: 600;
     }
   }
 
@@ -38,15 +43,12 @@
     height: 100%;
     display: block;
 
-    img {
-      height: 600px;
-    }
 
     @include vp-1023 {
       max-width: 100%;
       
       img {
-    max-height: 350px;
+        max-height: 410px;
       }
     }
   }
@@ -63,6 +65,7 @@
       border: none;
       min-height: unset;
       height: unset;
+      padding: 40px 10px 0;
 
       .card-arch__list {
         display: flex;
@@ -99,7 +102,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 98px 38px 91px;
+    padding: 92px 38px 91px;
+
+    @include vp-1023 {
+      padding: 46px 10px 38px;
+    }
   }
   
   &__list {
@@ -177,7 +184,8 @@
     margin: 0 0 40px;
 
     @include vp-1023 {
-      height: 95px;
+      height: 86px;
+      width: 62px;
       margin: 0 0 20px;
     }
 
