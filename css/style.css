@@ -384,6 +384,11 @@ li::marker {
   margin: 0 auto;
   padding: 0 180px;
 }
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 @media (max-width: 1023px) {
   .container {
     padding: 0 20px;
@@ -845,12 +850,25 @@ li::marker {
     max-width: 100%;
   }
   .card-arch--image img {
-    max-height: 410px;
+    height: 410px;
   }
 }
 @media (max-width: 767px) {
   .card-arch--image img {
     height: 285px;
+  }
+}
+.card-arch--main img {
+  height: 600px;
+}
+@media (max-width: 1023px) {
+  .card-arch--main img {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .card-arch--main img {
+    height: 290px;
   }
 }
 @media (max-width: 767px) {
