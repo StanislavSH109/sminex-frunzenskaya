@@ -853,6 +853,12 @@ li::marker {
     height: 285px;
   }
 }
+@media (max-width: 767px) {
+  .card-arch--slider {
+    width: 160px;
+    margin: 0 0 0 5px;
+  }
+}
 .card-arch--statistic {
   padding: 100px 104px 50px;
 }
@@ -1543,6 +1549,7 @@ li::marker {
 }
 @media (max-width: 767px) {
   .architecture__list {
+    display: flex;
     gap: 10px;
     overflow: auto;
     flex-wrap: nowrap;

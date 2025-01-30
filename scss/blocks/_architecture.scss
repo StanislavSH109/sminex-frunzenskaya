@@ -42,6 +42,7 @@
     }
 
     @include vp-767 {
+      display: flex;
       gap: 10px;
       overflow: auto;
       flex-wrap: nowrap;
