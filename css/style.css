@@ -364,7 +364,6 @@ main {
 
 img {
   display: block;
-  height: auto;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -666,7 +665,7 @@ li::marker {
 }
 @media (max-width: 1023px) {
   .embankment {
-    margin: 0 0 80px;
+    margin: 0 0 90px;
   }
 }
 @media (max-width: 767px) {
@@ -1216,8 +1215,8 @@ li::marker {
 }
 .infrastructure__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 170px;
+  grid-template-columns: minmax(200px, 800px) 400px;
+  gap: 168px;
   align-items: center;
 }
 @media (max-width: 1580px) {
@@ -1236,6 +1235,10 @@ li::marker {
     flex-direction: column;
     gap: 60px;
   }
+}
+.infrastructure__advantages {
+  max-width: 800px;
+  width: 100%;
 }
 .infrastructure__list {
   -moz-columns: 2;
@@ -1314,7 +1317,8 @@ li::marker {
   }
 }
 .park__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 700px minmax(200px, 500px);
   justify-content: space-between;
   align-items: center;
 }
@@ -1336,9 +1340,6 @@ li::marker {
     flex-direction: column;
     gap: 40px;
   }
-}
-.park__description {
-  max-width: 480px;
 }
 .park__title {
   text-align: left;
@@ -1372,7 +1373,6 @@ li::marker {
   padding: 0;
   gap: 15px;
   color: #ffffff;
-  width: 495px;
 }
 @media (max-width: 1023px) {
   .park__list {

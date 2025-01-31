@@ -11,8 +11,8 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 170px;
+    grid-template-columns: minmax(200px, 800px) 400px;
+    gap: 168px;
     align-items: center;
 
     @media (max-width: 1580px) {
@@ -28,6 +28,11 @@
       flex-direction: column;
       gap: 60px;
     }
+  }
+
+  &__advantages {
+    max-width: 800px;
+    width: 100%;
   }
 
 
