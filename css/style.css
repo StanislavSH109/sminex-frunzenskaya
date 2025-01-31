@@ -1292,14 +1292,11 @@ li::marker {
   font-weight: 400;
   line-height: 26px;
   margin: 0;
-  text-align: left;
-  width: 370px;
 }
 @media (max-width: 1023px) {
   .infrastructure__item-text {
     font-size: 14px;
     line-height: 20px;
-    width: unset;
   }
 }
 

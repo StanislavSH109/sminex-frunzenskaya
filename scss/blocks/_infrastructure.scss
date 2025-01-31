@@ -84,13 +84,10 @@
     font-weight: 400;
     line-height: 26px;
     margin: 0;
-    text-align: left;
-    width: 370px;
 
     @include vp-1023 {
       font-size: 14px;
       line-height: 20px;
-      width: unset;
     }
   }
 }
